@@ -1,0 +1,18 @@
+<h6>post vc html</h6>
+
+<div class="input">
+	<!--<form>-->
+		Name:
+		<plat-input plat-bind="post.title"></plat-input>
+		<br>
+		<br> Title:
+		<plat-input plat-bind="post.author"></plat-input>
+		<br>
+		<br>
+		<br>
+	<!--</form>-->
+	<textarea placeholder="Type body here" rows="6" cols="100" plat-bind="post.content"></textarea>
+</div>
+<br>
+
+<plat-button class="button-primary gs-button" plat-tap="post">Post</plat-button>

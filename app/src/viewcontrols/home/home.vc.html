@@ -1,1 +1,31 @@
-<h1>Hello World!</h1>
+<h5>home vc html</h5>
+<h1>My Blog</h1>
+
+<plat-button class="button-primary gs-button" plat-tap="createpost">Create Post</plat-button>
+
+<plat-foreach plat-context="posts">
+    <div class="post">
+        <h2>{{title}}</h2>
+        <div class="info">
+            <span class="author">{{author}}</span>
+        </div>
+        <p class="content">{{content}}</p>
+    </div>
+</plat-foreach>
+
+
+<!--<div>
+<ul plat-control="plat-foreach" plat-context="getdata" class="blog-list">
+	<li>{{post.title}}</li>
+	<li>{{post.author}}</li>
+	<li>{{post.contect}}</li>
+</ul>
+</div>-->
+
+<!--  Example from plat web site ---
+<ul plat-control="plat-foreach" plat-context="items">
+    <li>{{name}}</li>
+</ul>-->
+
+
+
