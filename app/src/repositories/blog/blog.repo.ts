@@ -6,14 +6,15 @@ export default class BlogRepository extends BaseRepository {
 	constructor(private blogService: BlogService) {
         super();
     }
+	Postblog(post: any): async.IThenable<Array<models.IPost>> {
+		var newpost = post;
+		return this.blogService.Postblog(newpost);
+	};
+
+
 	posts: Array<any>;
 	getPosts(): async.IThenable<Array<models.IPost>> {
-		// var post = {
-		// 	title: strtitle,
-		// 	author: strauthor,
-		// 	content: strcontent
-		// };
-		// this.posts.push(post);
+
 		return this.blogService.getPosts();
 	};
 }
