@@ -16,9 +16,8 @@ export default class BlogService extends BaseService {
             var res: any = success;
             return <Array<models.IPost>>res.response.results;
         });
-
-
     }
+
     Postblog(post: any): async.IThenable<Array<models.IPost>> {
         return this.http.json<Array<any>>({
             method: 'POST',
@@ -30,13 +29,12 @@ export default class BlogService extends BaseService {
             url: this.host,
             data: post
         })
-        .then((success) => {
-            var res: any = success;
-            return <Array<models.IPost>>res.response.results;
-        });
+            .then((success) => {
+                var res: any = success;
+                return <Array<models.IPost>>res.response.results;
+            });
     }
-    
-}    
+}
 
 register.injectable('blog-svc', BlogService);
 

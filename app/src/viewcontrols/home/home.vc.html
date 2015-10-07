@@ -3,7 +3,7 @@
 
 <plat-button class="button-primary gs-button" plat-tap="createpost">Create Post</plat-button>
 
-<plat-foreach plat-context="post">
+<plat-foreach plat-context="posts">
     <div class="post">
         <h2>{{title}}</h2>
         <div class="info">
@@ -12,20 +12,6 @@
         <p class="content">{{content}}</p>
     </div>
 </plat-foreach>
-
-
-<!--<div>
-<ul plat-control="plat-foreach" plat-context="getdata" class="blog-list">
-	<li>{{post.title}}</li>
-	<li>{{post.author}}</li>
-	<li>{{post.contect}}</li>
-</ul>
-</div>-->
-
-<!--  Example from plat web site ---
-<ul plat-control="plat-foreach" plat-context="items">
-    <li>{{name}}</li>
-</ul>-->
 
 
 

@@ -26,7 +26,6 @@ export default class PostViewControl extends BaseViewControl {
 
         this.blogRepo.Postblog(post);
         this.navigator.navigate(HomeViewControl);
-
     }
 }
 

@@ -11,7 +11,6 @@ export default class BlogRepository extends BaseRepository {
 		return this.blogService.Postblog(newpost);
 	};
 
-
 	posts: Array<any>;
 	getPosts(): async.IThenable<Array<models.IPost>> {
 
